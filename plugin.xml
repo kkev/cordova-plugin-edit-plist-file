@@ -16,27 +16,21 @@
     <author>Haythem OUEDERNI - haythem@nirbyapp.com </author>
 
     <keywords>cordova,whitelist,ios9,ecosystem:cordova,ordova-ios</keywords>
-    
+
     <license>MIT</license>
-    
+
     <engines>
         <!-- Requires > 3.3.* because of the custom Framework tag for iOS [CB-5238] -->
         <!-- Requires > 3.5.0 because of the custom Framework tag for Android [CB-6698] -->
         <engine name="cordova" version=">=3.5.0" />
     </engines>
-    
-    
-    
+
     <!-- ios -->
     <platform name="ios">
-        
         <!-- iOS9 whitelisting -->
         <config-file target="*-Info.plist" parent="UIRequiresFullScreen">
-            <true/>
+            <string>YES</string>
         </config-file>
-        
-        
-        
     </platform>
     
 </plugin>
